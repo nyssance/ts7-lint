@@ -83,4 +83,7 @@ ignorePatterns = [
 "unicorn/prefer-keyboard-event-key" = "error"
 "unicorn/prefer-logical-operator-over-ternary" = "error"
 "unicorn/no-typeof-undefined" = "error"
+
+# Import cycles are a hard gate; the rule is off by default
+"import/no-cycle" = ["error", { allowUnsafeDynamicCyclicDependency = true }]
 # ts7-lint:end
