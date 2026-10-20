@@ -1,6 +1,6 @@
 {
   "name": "@nyssance/ts7-lint",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The TypeScript 7 modern-syntax rule block for bun lint, kept identical across repos",
   "license": "Apache-2.0",
   "repository": {
