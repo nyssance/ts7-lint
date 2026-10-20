@@ -1,0 +1,34 @@
+{
+  "name": "@nyssance/ts7-lint",
+  "version": "0.1.0",
+  "description": "The TypeScript 7 modern-syntax rule block for bun lint, kept identical across repos",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyssance/ts7-lint.git"
+  },
+  "homepage": "https://github.com/nyssance/ts7-lint#readme",
+  "keywords": ["bun", "lint", "typescript", "modern-syntax", "esnext"],
+  "type": "module",
+  "bin": {
+    "ts7-lint": "src/index.ts"
+  },
+  "files": ["src/index.ts", "rules.toml", "README.md", "LICENSE"],
+  "engines": {
+    "bun": ">=1.4.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "bun test",
+    "lint": "bun lint",
+    "format": "bun fmt",
+    "check": "bun run typecheck && bun run lint && bun run test && bun src/index.ts --check"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.3",
+    "typescript": "^7.0.2"
+  }
+}
