@@ -1,7 +1,7 @@
 {
   "name": "@nyssance/ts7-lint",
-  "version": "0.1.2",
-  "description": "The TypeScript 7 modern-syntax rule block for bun lint, kept identical across repos",
+  "version": "0.1.3",
+  "description": "The TypeScript 7 modern-syntax rules for bun lint, run as their own check next to bun lint",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
@@ -25,7 +25,8 @@
     "test": "bun test",
     "lint": "bun lint",
     "format": "bun fmt",
-    "check": "bun run typecheck && bun run lint && bun run test && bun src/index.ts --check"
+    "ts7-lint": "bun src/index.ts",
+    "check": "bun run typecheck && bun run lint && bun run ts7-lint && bun run test"
   },
   "devDependencies": {
     "@types/bun": "^1.4.3",
