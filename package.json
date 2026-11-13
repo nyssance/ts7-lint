@@ -21,15 +21,12 @@
     "access": "public"
   },
   "scripts": {
-    "typecheck": "tsc --noEmit",
     "test": "bun test",
     "lint": "bun lint",
     "format": "bun fmt",
-    "ts7-lint": "bun src/index.ts",
-    "check": "bun run typecheck && bun run lint && bun run ts7-lint && bun run test"
+    "ts7-lint": "bun src/index.ts"
   },
   "devDependencies": {
-    "@types/bun": "^1.4.4",
-    "typescript": "^7.0.2"
+    "@types/bun": "^1.4.4"
   }
 }

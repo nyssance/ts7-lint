@@ -4,7 +4,7 @@
 
 The TypeScript 7 modern-syntax rules for `bun lint`, run as their own check next to `bun lint`.
 
-`tsc` 7 targets `esnext`, so every current language and runtime feature can be used directly:
+TypeScript 7 targets `esnext`, so every current language and runtime feature can be used directly:
 `.at(-1)`, `toSorted()`, `structuredClone()`, `??=`, `replaceAll()`, `findLast()`, `prepend()`,
 `Object.hasOwn()`, `Math.hypot()`, `String.raw`, `for…of`, `import type`, optional chaining and
 nullish coalescing. It also gates import cycles (`import/no-cycle`). `bun lint` does not enable the rules that reject the older forms, and
