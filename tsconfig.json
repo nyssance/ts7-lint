@@ -1,9 +1,4 @@
 {
-  "compilerOptions": {
-    "types": ["bun"],
-    "noEmit": true,
-    "allowImportingTsExtensions": true,
-    "skipLibCheck": true
-  },
+  "extends": "@nyssance/tsconfig/bun.json",
   "include": ["src"]
 }

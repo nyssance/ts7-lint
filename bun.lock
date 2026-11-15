@@ -5,11 +5,14 @@
     "": {
       "name": "@nyssance/ts7-lint",
       "devDependencies": {
+        "@nyssance/tsconfig": "^0.1.0",
         "@types/bun": "^1.4.4",
       },
     },
   },
   "packages": {
+    "@nyssance/tsconfig": ["@nyssance/tsconfig@0.1.0", "", {}, "sha512-tLXTdPG1MehZI0kc3ZA37KYLp9az9ktUI/SKMjO+DHdqlgzsY2yHcSIG0yE8c2nfjqD0bb8ulOLqJkun1IKxTQ=="],
+
     "@types/bun": ["@types/bun@1.4.4", "", { "dependencies": { "bun-types": "1.4.4" } }, "sha512-9wkRDXUXK124pEnAutE6n/l18j+i9GC5IAHK8TmX/2nlySETmky0OU6yL5U8pW1AoKh++AN9auDCr647BfurjQ=="],
 
     "@types/node": ["@types/node@26.6.6", "", { "dependencies": { "undici-types": "~8.9.0" } }, "sha512-MzQj+8Kx3XI40OmUAE6Qoh58ZMNstNNMwn2nfd3qWsfe7nDNSqJNzes4njhz6AHwrSHOffSLwXU6yb474Q4aog=="],
